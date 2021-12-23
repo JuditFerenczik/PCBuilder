@@ -1,0 +1,12 @@
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\bin\Debug\PCBuilder.exe.config
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\bin\Debug\PCBuilder.exe
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\bin\Debug\PCBuilder.pdb
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.csproj.AssemblyReference.cache
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.Form1.resources
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.FormAddPart.resources
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.FormEditComputer.resources
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.Properties.Resources.resources
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.csproj.GenerateResource.cache
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.csproj.CoreCompileInputs.cache
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.exe
+C:\Users\Felhasználó\source\repos\PCBuilder\PCBuilder\obj\Debug\PCBuilder.pdb
