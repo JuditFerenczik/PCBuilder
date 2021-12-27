@@ -64,6 +64,22 @@ namespace PCBuilder
                 Program.formEditComputer.button_cNew.Text = "CHANGE THE COMPUTER";
                 Program.formEditComputer.textBox_konf.Text = selectedComp.KonfigName;
                 Program.formEditComputer.textBox_konf.ReadOnly = true;
+              
+                for (int i = 0; i < selectedComp.ComputerParts.Count; i++)
+                {
+                    Parts subparts = (Parts)selectedComp.ComputerParts[i];
+                    Program.formEditComputer.listBox_partlist.Items.Add(subparts);
+
+
+                }
+                if (Program.formEditComputer.comboBox_opsys.Items.Count < 1)
+                {
+                    foreach (string item in Enum.GetNames(typeof(OPSystem)))
+                    {
+                        Program.formEditComputer.comboBox_opsys.Items.Add(item);
+                    }
+                }
+
                 for (int i = 0; i < Program.formEditComputer.comboBox_opsys.Items.Count; i++)
                 {
                     if (selectedComp.Opsystem.ToString() == Program.formEditComputer.comboBox_opsys.Items[i].ToString())
@@ -75,13 +91,7 @@ namespace PCBuilder
               
                 Program.formEditComputer.textBox_owner.Text = selectedComp.OwnerName;
                 Program.formEditComputer.checkBox_gamer.Checked = selectedComp.GamerConfig;
-                for (int i = 0; i < selectedComp.ComputerParts.Count; i++)
-                {
-                    Parts subparts = (Parts)selectedComp.ComputerParts[i];
-                    Program.formEditComputer.listBox_partlist.Items.Add(subparts);
-
-
-                }
+            
                 Program.formEditComputer.listBox_partlist.Enabled = false;
                 Program.formEditComputer.ShowDialog();
               

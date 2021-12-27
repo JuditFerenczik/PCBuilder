@@ -12,6 +12,7 @@ namespace PCBuilder
 {
     public partial class FormEditComputer : Form
     {
+        private bool firstLoad = true;
         public FormEditComputer()
         {
             InitializeComponent();
@@ -36,10 +37,14 @@ namespace PCBuilder
 
         private void FormEditComputer_Load(object sender, EventArgs e)
         {
-            foreach (string item in Enum.GetNames(typeof(OPSystem)))
+            if (comboBox_opsys.Items.Count < 1)
             {
-                comboBox_opsys.Items.Add(item);
+                foreach (string item in Enum.GetNames(typeof(OPSystem)))
+                {
+                    comboBox_opsys.Items.Add(item);
+                }
             }
+            
         }
 
         private void clearInputs()
