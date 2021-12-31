@@ -110,10 +110,11 @@ namespace PCBuilder
             {
                 Computers selectedComp = (Computers)Program.form1.listBox_SUM.SelectedItem;
                 MessageBox.Show(Program.form1.listBox_SUM.SelectedIndex.ToString());
+                Program.form1.listBox_SUM.Items.Remove(Program.form1.listBox_SUM.SelectedItem);
                 OPSystem opSystem = (OPSystem)Enum.Parse(typeof(OPSystem), comboBox_opsys.SelectedIndex.ToString());
             
                
-                    selectedComp.Opsystem = opSystem;
+                selectedComp.Opsystem = opSystem;
                 selectedComp.OwnerName = textBox_owner.Text;
                 selectedComp.GamerConfig = checkBox_gamer.Checked;
                 textBox_konf.ReadOnly = false;
@@ -121,6 +122,10 @@ namespace PCBuilder
                 label1.Text = "Properties of the computer you would like to add";
                 button_cNew.Text = "ADD NEW COMPUTER";
                 clearInputs();
+                Program.form1.listBox_SUM.Items.Add(selectedComp);
+                
+                //Program.form1.listBox_SUM.Update();
+                //Program.form1.listBox_SUM.Refresh();
                 Program.formEditComputer.Close();
                 
 
