@@ -21,7 +21,7 @@ namespace PCBuilder
             allParts = new List<Parts>();
             formAddPart = new FormAddPart();
             formEditComputer = new FormEditComputer();
-            Application.Run(new Form1());
+            Application.Run(form1);
         }
     }
 }

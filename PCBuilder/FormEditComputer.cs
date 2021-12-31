@@ -100,8 +100,9 @@ namespace PCBuilder
                 OPSystem opSystem = (OPSystem)Enum.Parse(typeof(OPSystem), comboBox_opsys.SelectedIndex.ToString());
                 Computers mynewcomp = new Computers(textBox_konf.Text, opSystem, textBox_owner.Text, checkBox_gamer.Checked, myPartList);
                 MessageBox.Show(mynewcomp.ToString());
-                Program.form1.listBox_SUM.Items.Add("2");
-                Program.form1.listBox_SUM.Items.Add("3");
+            
+                Program.form1.listBox_SUM.Items.Add(mynewcomp);
+           
                 clearInputs();
 
             }
@@ -120,7 +121,8 @@ namespace PCBuilder
                 label1.Text = "Properties of the computer you would like to add";
                 button_cNew.Text = "ADD NEW COMPUTER";
                 clearInputs();
-                Program.form1.ShowDialog();
+                Program.formEditComputer.Close();
+                
 
 
             }

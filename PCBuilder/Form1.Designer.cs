@@ -116,12 +116,12 @@ namespace PCBuilder
         }
 
         #endregion
-        private System.Windows.Forms.Button button_new;
         private System.Windows.Forms.Button button_edit;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Label label_konf;
         private System.Windows.Forms.Label label2_price;
         public System.Windows.Forms.ListBox listBox_SUM;
+        public System.Windows.Forms.Button button_new;
     }
 }
 
